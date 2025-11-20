@@ -1,0 +1,7 @@
+[tool.ruff]
+line-length = 88
+
+[tool.pytest.ini_options]
+markers = [
+    "perf: marks tests as performance tests (deselect with '-m \"not perf\"')",
+]
