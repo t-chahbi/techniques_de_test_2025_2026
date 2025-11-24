@@ -10,7 +10,7 @@ def deserialize_point_set(data):
     """
     raise NotImplementedError("Not implemented yet")
 
-def serialize_triangles(triangles):
+def serialize_triangles(points, triangles):
     """
     Serializes Triangles to binary format.
     """
