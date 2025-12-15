@@ -1,17 +1,19 @@
+.PHONY: test unit_test perf_test coverage lint doc
+
 test:
-	coverage run -m pytest
+	cd /Users/thaha/Documents/cours/M1/techniques_de_test/techniques_de_test_2025_2026/TP && coverage run -m pytest
 
 unit_test:
-	pytest -m "not perf"
+	cd /Users/thaha/Documents/cours/M1/techniques_de_test/techniques_de_test_2025_2026/TP && pytest -m "not perf"
 
 perf_test:
-	pytest -m perf
+	cd /Users/thaha/Documents/cours/M1/techniques_de_test/techniques_de_test_2025_2026/TP && pytest -m perf -v -s
 
 coverage:
-	coverage report -m
+	cd /Users/thaha/Documents/cours/M1/techniques_de_test/techniques_de_test_2025_2026/TP && coverage report -m
 
 lint:
-	ruff check .
+	cd /Users/thaha/Documents/cours/M1/techniques_de_test/techniques_de_test_2025_2026/TP && ruff check .
 
 doc:
-	pdoc3 --html --output-dir docs src/triangulator
+	cd /Users/thaha/Documents/cours/M1/techniques_de_test/techniques_de_test_2025_2026/TP && pdoc3 --html --output-dir docs src/triangulator --force

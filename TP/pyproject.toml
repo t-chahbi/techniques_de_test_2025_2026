@@ -1,7 +1,15 @@
 [tool.ruff]
 line-length = 88
 
+[tool.ruff.lint]
+select = ["E", "F", "W", "D"]
+ignore = ["D100", "D104"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
 [tool.pytest.ini_options]
 markers = [
     "perf: marks tests as performance tests (deselect with '-m \"not perf\"')",
 ]
+pythonpath = ["."]
