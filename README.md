@@ -13,5 +13,7 @@ Groupe de TP : M1 ILSEN classique
 
 ## Remarques particulières
 
-Si vous avez des remarques particulières à faire sur le TP ou votre rendu vous
-pouvez les faire ici.
+Toutes les commandes make doivent etre executees depuis le repertoire TP/.
+L'algorithme de triangulation utilise est Bowyer-Watson (Delaunay).
+Les tests de performance sont marques avec @pytest.mark.perf pour pouvoir les exclure.
+Le format binaire utilise little-endian avec des entiers 32-bit (struct '<I').
